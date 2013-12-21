@@ -12,7 +12,7 @@ class Fluent::YammerOutput < Fluent::Output
 
   def configure(conf)
     super
-    @yammer = Yammer::Client.new(access_token: conf['access_token'])
+    @yammer = Yammer::Client.new(:access_token => conf['access_token'])
     @group_id = conf['group_id']
   end
 
@@ -25,7 +25,7 @@ class Fluent::YammerOutput < Fluent::Output
   end
 
   def create_message(message)
-    @yammer.create_message(message, group_id: @group_id)
+    @yammer.create_message(message, :group_id => @group_id)
   rescue Yammer::Error => e
     $log.error("Yammer Error: #{e.message}")
   end
