@@ -7,8 +7,8 @@ Gem::Specification.new do |spec|
   spec.version       = "0.0.1"
   spec.authors       = ["Shinohara Teruki"]
   spec.email         = ["ts_3156@yahoo.co.jp"]
-  spec.description   = %q{Fluentd Input/Output plugin to collect/process yammer messages with Yammer API.}
-  spec.summary       = %q{Fluentd Input/Output plugin to collect/process yammer messages with Y    ammer API.}
+  spec.description   = %q{Fluentd Output plugin to process yammer messages with Yammer API.}
+  spec.summary       = %q{Fluentd Output plugin to process yammer messages with Yammer API.}
   spec.homepage      = ""
   spec.license       = "MIT"
 
