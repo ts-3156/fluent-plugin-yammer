@@ -9,8 +9,8 @@ Gem::Specification.new do |spec|
   spec.email         = ["ts_3156@yahoo.co.jp"]
   spec.description   = %q{Fluentd Output plugin to process yammer messages with Yammer API.}
   spec.summary       = %q{Fluentd Output plugin to process yammer messages with Yammer API.}
-  spec.homepage      = ""
-  spec.license       = "MIT"
+  spec.license       = "Apache 2.0"
+  spec.homepage      = "https://github.com/ts-3156/fluent-plugin-yammer"
 
   spec.files         = `git ls-files`.split($/)
   spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
