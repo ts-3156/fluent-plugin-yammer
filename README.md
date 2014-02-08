@@ -1,4 +1,4 @@
-fluent-plugin-yammer
+fluent-plugin-yammer, a plugin for [Fluentd](http://fluentd.org)
 =============
 
 [![Gem Version](https://badge.fury.io/rb/fluent-plugin-yammer.png)](http://badge.fury.io/rb/fluent-plugin-yammer)
