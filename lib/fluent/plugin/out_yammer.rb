@@ -2,7 +2,7 @@
 class Fluent::YammerOutput < Fluent::Output
   Fluent::Plugin.register_output('yammer', self)
 
-  config_param :access_token, :string
+  config_param :access_token, :string, :secret => true
   config_param :group_id, :string
 
   def initialize
