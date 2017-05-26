@@ -27,6 +27,6 @@ class Fluent::YammerOutput < Fluent::Output
   def create_message(message)
     @yammer.create_message(message, :group_id => @group_id)
   rescue Yammer::Error => e
-    $log.error("Yammer Error: #{e.message}")
+    log.error("Yammer Error: #{e.message}")
   end
 end
